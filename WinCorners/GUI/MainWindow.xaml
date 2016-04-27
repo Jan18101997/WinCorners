@@ -1,0 +1,43 @@
+﻿<Window x:Class="WinCorners.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinCorners"
+        mc:Ignorable="d"
+        Title="Screens" Height="550" Width="440" Loaded="Window_Loaded" Closed="Window_Closed" Topmost="True" Icon="/WinCorners;component/AppIcon.ico">
+    <Grid>
+        <Grid Height="104" Margin="10,10,10,0" VerticalAlignment="Top">
+            <ComboBox x:Name="screenSelect" Margin="81,0,0,0" VerticalAlignment="Top" SelectionChanged="screenSelect_SelectionChanged" />
+            <Label Content="Device:" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Label x:Name="currentDevicePrimary" Content="" Margin="81,26,0,0" VerticalAlignment="Top" />
+            <Label x:Name="currentDeviceWidth" Content="" Margin="81,52,0,0" VerticalAlignment="Top" />
+            <Label x:Name="currentDeviceHeight" Content="" Margin="81,78,0,0" VerticalAlignment="Top" />
+            <Label Content="Primary:" HorizontalAlignment="Left" Margin="0,26,0,0" VerticalAlignment="Top" />
+            <Label Content="Width:" HorizontalAlignment="Left" Margin="0,52,0,0" VerticalAlignment="Top" />
+            <Label Content="Height:" HorizontalAlignment="Left" Margin="0,78,0,0" VerticalAlignment="Top" />
+        </Grid>
+
+        <Grid Height="20" Margin="10,0,10,10" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="75" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="75" />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="add" Content="Add" Click="add_Click" />
+            <Button x:Name="change" Content="Change" Grid.Column="2" Click="change_Click" />
+            <Button x:Name="remove" Content="Remove" Grid.Column="4" Click="remove_Click" />
+        </Grid>
+        <ListView x:Name="cornerList" Margin="10,119,10,35">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Pos1" Width="100" DisplayMemberBinding="{Binding pos1}" />
+                    <GridViewColumn Header="Pos2" Width="100" DisplayMemberBinding="{Binding pos2}" />
+                    <GridViewColumn Header="Command"  DisplayMemberBinding="{Binding command}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

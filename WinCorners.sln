@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinCorners", "WinCorners\WinCorners.csproj", "{1B4F60D6-E7D0-49D7-8682-C94EAFDBF3BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer", "Installer\Installer.csproj", "{D4552D8C-35A0-4642-8408-44B997FFC2FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B4F60D6-E7D0-49D7-8682-C94EAFDBF3BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B4F60D6-E7D0-49D7-8682-C94EAFDBF3BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B4F60D6-E7D0-49D7-8682-C94EAFDBF3BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B4F60D6-E7D0-49D7-8682-C94EAFDBF3BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4552D8C-35A0-4642-8408-44B997FFC2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4552D8C-35A0-4642-8408-44B997FFC2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4552D8C-35A0-4642-8408-44B997FFC2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4552D8C-35A0-4642-8408-44B997FFC2FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

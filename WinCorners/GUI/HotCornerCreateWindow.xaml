@@ -1,0 +1,27 @@
+﻿<Window x:Class="WinCorners.HotCornerCreateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinCorners"
+        xmlns:xceed="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="HotCornerCreateWindow" Height="276.658" Width="240.961" Topmost="True" Icon="/WinCorners;component/AppIcon.ico" KeyDown="Window_KeyDown" ResizeMode="NoResize">
+    <Grid>
+        <CheckBox x:Name="runOnce" Content="Run Once" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Checked="runOnce_CheckedChange" Unchecked="runOnce_CheckedChange" />
+        <CheckBox x:Name="disableAtMouseDown" Content="Disable at mouse Down" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Checked="disableAtMouseDown_CheckedChange" Unchecked="disableAtMouseDown_CheckedChange" />
+        <ComboBox x:Name="commandSelector" Margin="10,129,10,0" VerticalAlignment="Top" SelectionChanged="commandSelector_SelectionChanged" />
+        <Button x:Name="commadSettings" Content="ChangeCommand" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top" Width="105" Click="commadSettings_Click" />
+        <xceed:DoubleUpDown x:Name="pos1X" Margin="74,35,0,0" HorizontalAlignment="Left" Width="67" Height="22" VerticalAlignment="Top" ValueChanged="pos1_ValueChanged" />
+        <xceed:DoubleUpDown x:Name="pos1Y" Margin="146,35,0,0" HorizontalAlignment="Left" Width="67" Height="22" VerticalAlignment="Top" ValueChanged="pos1_ValueChanged" />
+        <xceed:DoubleUpDown x:Name="pos2X" Margin="74,62,0,0" HorizontalAlignment="Left" Width="67" Height="22" VerticalAlignment="Top" ValueChanged="pos2_ValueChanged" />
+        <xceed:DoubleUpDown x:Name="pos2Y" Margin="146,62,0,0" HorizontalAlignment="Left" Width="67" Height="22" VerticalAlignment="Top" ValueChanged="pos2_ValueChanged" />
+        <Label Content="Position 2:" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" />
+        <Label Content="Position 1:" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" />
+        <Label Content="Y" HorizontalAlignment="Left" Margin="146,10,0,0" VerticalAlignment="Top" />
+        <Label Content="X" HorizontalAlignment="Left" Margin="74,10,0,0" VerticalAlignment="Top" />
+        <Label x:Name="commandStatus" Content="" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top" />
+        <Button x:Name="ok" Content="Ok" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" Width="75" Click="ok_Click" />
+        <Button x:Name="cancel" Content="Cancel" HorizontalAlignment="Right" Margin="0,207,10,0" VerticalAlignment="Top" Width="75" Click="cancel_Click" />
+    </Grid>
+</Window>
